@@ -307,7 +307,7 @@ Weekend_Factor = 1.3  # +30% demand on weekends
 
 ### 4.1 Strategi Modeling
 
-**Model Portfolio Approach - 8 Model Diuji:**
+**Model Portfolio Approach - 7 Model Diuji:**
 
 **Baseline Models (Linear):**
 1. Linear Regression
@@ -319,7 +319,6 @@ Weekend_Factor = 1.3  # +30% demand on weekends
 5. Random Forest
 6. Gradient Boosting
 7. **XGBoost** ⭐ (FINAL MODEL)
-8. LightGBM
 
 **Justifikasi Portfolio Approach:**
 - ✅ No Free Lunch Theorem: No single algorithm best for all problems
@@ -352,7 +351,7 @@ Total Products: 500 (dari ABT)
 # Linear Models (Ridge, Lasso, ElasticNet)
 X_scaled = StandardScaler().fit_transform(X)
 
-# Tree Models (RF, GB, XGB, LightGBM)
+# Tree Models (RF, GB, XGB)
 X_unscaled = X  # Use raw features (scale-invariant)
 ```
 
@@ -410,7 +409,6 @@ XGBoost Best Parameters:
 | Random Forest | 0.987 | 0.961 | 0.958 | 3.2% | 2.1s |
 | Gradient Boosting | 0.992 | 0.973 | 0.971 | 2.1% | 3.8s |
 | **XGBoost (Tuned)** | **0.9999** | **0.9995** | **0.9992** | **1.29%** | **1.8s** |
-| LightGBM | 0.996 | 0.981 | 0.979 | 1.8% | 0.9s |
 
 **KEPUTUSAN FINAL: XGBoost (Tuned)**
 
